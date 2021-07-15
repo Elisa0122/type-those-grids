@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
-  color: #222;
+  color: #000;
+  font-family: "Merriweather", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -21,6 +25,11 @@ h1{
   margin: 0;
   padding: 1rem 2rem 2rem 1.5rem;
 }
+
+figure {
+  margin: 1rem;
+}
+
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -31,15 +40,16 @@ h1{
   grid-column: -1/-4;
   grid-row: 1/4;
   margin: 0;
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   width: 191%;
 }
 
-.banner h2 {
+.banner figcaption {
   grid-column: 1/span 3;
   grid-row: 2;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: lighter;
   font-style: italic;
   margin: 0;
@@ -50,7 +60,7 @@ h1{
   grid-column: 1/span 3;
   grid-row: 3;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
   font-weight: lighter;
   margin: 0;
   box-sizing: content-box;
